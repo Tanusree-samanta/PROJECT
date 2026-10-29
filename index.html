@@ -1,0 +1,874 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modern Personal Portfolio | Alex Morgan</title>
+    <meta
+      name="description"
+      content="A sleek, modern, and responsive personal portfolio website built with pure semantic HTML5 and CSS. Ready for GitHub Pages hosting."
+    />
+    <meta property="og:title" content="Modern Personal Portfolio | Alex Morgan" />
+    <meta
+      property="og:description"
+      content="A sleek, modern, and responsive personal portfolio website built with pure semantic HTML5 and CSS."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- External Stylesheet: Pure CSS (No JS / No Frameworks) -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ====================================================================
+         1. Header & Navigation (Pure CSS Responsive Menu)
+         ==================================================================== -->
+    <header class="header">
+      <div class="container nav-container">
+        <!-- Logo / Brand -->
+        <a href="#hero" class="nav-brand" aria-label="Alex Morgan Portfolio">
+          <span class="nav-brand-code">&lt;dev/&gt;</span>
+          <span>Alex Morgan</span>
+        </a>
+
+        <!-- Pure CSS Mobile Hamburger Toggle (Checkbox Hack) -->
+        <input
+          type="checkbox"
+          id="nav-toggle"
+          class="nav-toggle"
+          aria-label="Toggle navigation menu"
+        />
+        <label for="nav-toggle" class="nav-toggle-label" aria-label="Open Navigation Menu">
+          <span class="nav-toggle-icon"></span>
+        </label>
+
+        <!-- Navigation Links -->
+        <nav>
+          <ul class="nav-menu">
+            <li><a href="#hero" class="nav-link">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+            <li class="nav-cta">
+              <a href="#contact" class="btn btn-primary">Hire Me</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- ==================================================================
+           2. Hero Section
+           ================================================================== -->
+      <section id="hero" class="section hero">
+        <div class="container hero-grid">
+          <!-- Hero Text & CTAs -->
+          <div class="hero-content">
+            <div class="hero-badge-status">
+              <span class="status-dot"></span>
+              <span>Available for New Projects</span>
+            </div>
+
+            <h1 class="hero-title">
+              Hi, I'm Alex Morgan.
+              <span class="hero-gradient-text">Frontend Developer &amp; UI Craftsman</span>
+            </h1>
+
+            <p class="hero-description">
+              I build modern, responsive, and accessible web experiences using clean
+              semantic code. Focused on crafting intuitive digital products that marry
+              aesthetic elegance with engineering excellence.
+            </p>
+
+            <div class="hero-actions">
+              <a href="#contact" class="btn btn-primary">
+                <span>Hire Me</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+              <a href="#projects" class="btn btn-secondary">
+                <span>View Projects</span>
+              </a>
+            </div>
+
+            <!-- Key Quick Stats -->
+            <div class="hero-stats">
+              <div class="stat-item">
+                <span class="stat-number">3+</span>
+                <span class="stat-label">Years Experience</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">25+</span>
+                <span class="stat-label">Projects Built</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">100%</span>
+                <span class="stat-label">Client Satisfaction</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero Visual / Profile Placeholder Card -->
+          <div class="hero-visual">
+            <div class="profile-card-wrapper">
+              <div class="profile-card-glow"></div>
+
+              <!-- Floating Tech Badges -->
+              <div class="floating-badge floating-badge-top">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#38bdf8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                </svg>
+                <span>Semantic HTML5 &amp; CSS3</span>
+              </div>
+
+              <div class="floating-badge floating-badge-bottom">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                  <line x1="8" y1="21" x2="16" y2="21"></line>
+                  <line x1="12" y1="17" x2="12" y2="21"></line>
+                </svg>
+                <span>100% Responsive Design</span>
+              </div>
+
+              <div class="profile-card">
+                <div class="profile-image-container">
+                  <!-- Modern Pure SVG Profile Illustration Placeholder -->
+                  <svg class="profile-illustration" viewBox="0 0 320 320" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Profile Illustration">
+                    <defs>
+                      <linearGradient id="avatarBg" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#1e293b"/>
+                        <stop offset="50%" stop-color="#0f172a"/>
+                        <stop offset="100%" stop-color="#1e1b4b"/>
+                      </linearGradient>
+                      <linearGradient id="accentGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" stop-color="#38bdf8"/>
+                        <stop offset="50%" stop-color="#6366f1"/>
+                        <stop offset="100%" stop-color="#a855f7"/>
+                      </linearGradient>
+                    </defs>
+                    <rect width="320" height="320" fill="url(#avatarBg)"/>
+                    <circle cx="160" cy="115" r="54" fill="#334155" stroke="url(#accentGlow)" stroke-width="3"/>
+                    <path d="M160 85 C146 85 135 96 135 110 C135 124 146 135 160 135 C174 135 185 124 185 110 C185 96 174 85 160 85 Z" fill="#94a3b8"/>
+                    <path d="M85 240 C85 195 118 180 160 180 C202 180 235 195 235 240 L85 240 Z" fill="#334155" stroke="url(#accentGlow)" stroke-width="2"/>
+                    <circle cx="160" cy="110" r="4" fill="#38bdf8"/>
+                    <path d="M125 210 L195 210" stroke="#38bdf8" stroke-width="2" stroke-linecap="round" stroke-dasharray="4 4"/>
+                    <!-- Code Symbols Overlay -->
+                    <text x="50" y="70" font-family="monospace" font-size="20" fill="#38bdf8" opacity="0.6">&lt;/&gt;</text>
+                    <text x="245" y="90" font-family="monospace" font-size="22" fill="#a855f7" opacity="0.6">{ ; }</text>
+                    <text x="45" y="270" font-family="monospace" font-size="16" fill="#10b981" opacity="0.7">const dev = true;</text>
+                  </svg>
+                </div>
+                <div class="profile-info">
+                  <h3 class="profile-name">Alex Morgan</h3>
+                  <p class="profile-role">Frontend Engineer &amp; Designer</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================================================================
+           3. About Me Section
+           ================================================================== -->
+      <section id="about" class="section about">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-badge">About Me</span>
+            <h2 class="section-title">Driven by Quality &amp; Clean Code</h2>
+            <p class="section-subtitle">
+              Transforming complex problems into elegant, accessible, and intuitive digital interfaces.
+            </p>
+          </div>
+
+          <div class="about-grid">
+            <!-- Biography Column -->
+            <div class="about-bio">
+              <h3 class="about-heading">
+                A frontend engineer who cares deeply about both user experience and code health.
+              </h3>
+              <p class="about-text">
+                Hello! I'm a passionate web developer dedicated to building responsive,
+                user-friendly websites. With over 3 years of hands-on experience crafting
+                clean HTML5 and CSS3 architectures, I focus on performance, semantic structure,
+                and pixel-perfect execution across every viewport.
+              </p>
+              <p class="about-text">
+                I believe great software is born at the intersection of aesthetic intuition
+                and rigorous engineering discipline. Whether developing bespoke components
+                from scratch or structuring design tokens, I strive for clean, maintainable
+                solutions without unnecessary bloat.
+              </p>
+
+              <!-- Quick Facts List -->
+              <div class="about-details-list">
+                <div class="detail-item">
+                  <span class="detail-label">Location</span>
+                  <span class="detail-value">San Francisco, CA / Remote</span>
+                </div>
+                <div class="detail-item">
+                  <span class="detail-label">Specialization</span>
+                  <span class="detail-value">Frontend UI/UX &amp; Web Design</span>
+                </div>
+                <div class="detail-item">
+                  <span class="detail-label">Education</span>
+                  <span class="detail-value">B.S. in Computer Science</span>
+                </div>
+                <div class="detail-item">
+                  <span class="detail-label">Availability</span>
+                  <span class="detail-value">Open to Freelance &amp; Full-time</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Key Highlights Cards (Flexbox & Grid) -->
+            <div class="about-highlights">
+              <div class="highlight-card">
+                <div class="highlight-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                  </svg>
+                </div>
+                <h4 class="highlight-title">Fast Performance</h4>
+                <p class="highlight-desc">
+                  Optimized assets, minimal reflows, and lightweight semantic markup that loads instantly.
+                </p>
+              </div>
+
+              <div class="highlight-card">
+                <div class="highlight-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                    <line x1="8" y1="21" x2="16" y2="21"></line>
+                    <line x1="12" y1="17" x2="12" y2="21"></line>
+                  </svg>
+                </div>
+                <h4 class="highlight-title">Mobile-First</h4>
+                <p class="highlight-desc">
+                  Fluid layouts powered by modern CSS Grid and Flexbox that adapt to smartphones, tablets, and 4K monitors.
+                </p>
+              </div>
+
+              <div class="highlight-card">
+                <div class="highlight-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="16 18 22 12 16 6"></polyline>
+                    <polyline points="8 6 2 12 8 18"></polyline>
+                  </svg>
+                </div>
+                <h4 class="highlight-title">Clean Standards</h4>
+                <p class="highlight-desc">
+                  Strict adherence to semantic HTML5, DRY CSS architecture, and maintainable design systems.
+                </p>
+              </div>
+
+              <div class="highlight-card">
+                <div class="highlight-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                  </svg>
+                </div>
+                <h4 class="highlight-title">Accessible (a11y)</h4>
+                <p class="highlight-desc">
+                  WCAG AA contrast compliant, keyboard navigable, and built for screen readers out of the box.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================================================================
+           4. Skills Section
+           ================================================================== -->
+      <section id="skills" class="section skills">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-badge">Skills &amp; Toolkit</span>
+            <h2 class="section-title">Core Competencies</h2>
+            <p class="section-subtitle">
+              A comprehensive toolkit of languages, styling techniques, and development best practices.
+            </p>
+          </div>
+
+          <div class="skills-grid">
+            <!-- Skill Category 1 -->
+            <div class="skill-card">
+              <div class="skill-header">
+                <div class="skill-icon-box">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="16 18 22 12 16 6"></polyline>
+                    <polyline points="8 6 2 12 8 18"></polyline>
+                  </svg>
+                </div>
+                <h3 class="skill-category-title">Core Frontend</h3>
+              </div>
+              <div class="skill-items-list">
+                <div class="skill-item">
+                  <div class="skill-item-info">
+                    <span>Semantic HTML5</span>
+                    <span class="skill-percentage">95%</span>
+                  </div>
+                  <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 95%;"></div></div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-item-info">
+                    <span>Modern CSS3</span>
+                    <span class="skill-percentage">92%</span>
+                  </div>
+                  <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 92%;"></div></div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-item-info">
+                    <span>JavaScript (ES6+)</span>
+                    <span class="skill-percentage">88%</span>
+                  </div>
+                  <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 88%;"></div></div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-item-info">
+                    <span>Web Accessibility</span>
+                    <span class="skill-percentage">90%</span>
+                  </div>
+                  <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 90%;"></div></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Skill Category 2 -->
+            <div class="skill-card">
+              <div class="skill-header">
+                <div class="skill-icon-box">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                    <line x1="3" y1="9" x2="21" y2="9"></line>
+                    <line x1="9" y1="21" x2="9" y2="9"></line>
+                  </svg>
+                </div>
+                <h3 class="skill-category-title">Layout &amp; Styling</h3>
+              </div>
+              <div class="skill-items-list">
+                <div class="skill-item">
+                  <div class="skill-item-info">
+                    <span>CSS Grid Systems</span>
+                    <span class="skill-percentage">94%</span>
+                  </div>
+                  <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 94%;"></div></div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-item-info">
+                    <span>Flexbox Alignment</span>
+                    <span class="skill-percentage">96%</span>
+                  </div>
+                  <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 96%;"></div></div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-item-info">
+                    <span>Media Queries</span>
+                    <span class="skill-percentage">92%</span>
+                  </div>
+                  <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 92%;"></div></div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-item-info">
+                    <span>CSS Keyframe Animations</span>
+                    <span class="skill-percentage">85%</span>
+                  </div>
+                  <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 85%;"></div></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Skill Category 3 -->
+            <div class="skill-card">
+              <div class="skill-header">
+                <div class="skill-icon-box">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+                  </svg>
+                </div>
+                <h3 class="skill-category-title">Tools &amp; Workflow</h3>
+              </div>
+              <div class="skill-items-list">
+                <div class="skill-item">
+                  <div class="skill-item-info">
+                    <span>Git &amp; GitHub Pages</span>
+                    <span class="skill-percentage">90%</span>
+                  </div>
+                  <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 90%;"></div></div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-item-info">
+                    <span>VS Code &amp; Extensions</span>
+                    <span class="skill-percentage">95%</span>
+                  </div>
+                  <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 95%;"></div></div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-item-info">
+                    <span>Browser DevTools</span>
+                    <span class="skill-percentage">92%</span>
+                  </div>
+                  <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 92%;"></div></div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-item-info">
+                    <span>Figma to HTML/CSS</span>
+                    <span class="skill-percentage">88%</span>
+                  </div>
+                  <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 88%;"></div></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Skill Category 4 -->
+            <div class="skill-card">
+              <div class="skill-header">
+                <div class="skill-icon-box">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 16 14"></polyline>
+                  </svg>
+                </div>
+                <h3 class="skill-category-title">Architecture</h3>
+              </div>
+              <div class="skill-items-list">
+                <div class="skill-item">
+                  <div class="skill-item-info">
+                    <span>Performance &amp; Speed</span>
+                    <span class="skill-percentage">94%</span>
+                  </div>
+                  <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 94%;"></div></div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-item-info">
+                    <span>Cross-Browser Testing</span>
+                    <span class="skill-percentage">90%</span>
+                  </div>
+                  <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 90%;"></div></div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-item-info">
+                    <span>Search Optimization (SEO)</span>
+                    <span class="skill-percentage">86%</span>
+                  </div>
+                  <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 86%;"></div></div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-item-info">
+                    <span>Modular CSS Design</span>
+                    <span class="skill-percentage">92%</span>
+                  </div>
+                  <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 92%;"></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================================================================
+           5. Projects Section (3 Project Cards)
+           ================================================================== -->
+      <section id="projects" class="section projects">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-badge">Featured Work</span>
+            <h2 class="section-title">Showcase Projects</h2>
+            <p class="section-subtitle">
+              A curated selection of responsive web applications highlighting clean layouts,
+              CSS grid systems, and thoughtful UI micro-interactions.
+            </p>
+          </div>
+
+          <div class="projects-grid">
+            <!-- Project 1: Apex Dashboard -->
+            <article class="project-card">
+              <div class="project-visual">
+                <div class="project-preview-mockup">
+                  <div class="mockup-window">
+                    <div class="mockup-header">
+                      <div class="mockup-dot"></div>
+                      <div class="mockup-dot"></div>
+                      <div class="mockup-dot"></div>
+                    </div>
+                    <div class="mockup-content">
+                      <div class="mockup-skeleton-hero"></div>
+                      <div class="mockup-skeleton-grid">
+                        <div class="mockup-skeleton-box"></div>
+                        <div class="mockup-skeleton-box"></div>
+                        <div class="mockup-skeleton-box"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="project-body">
+                <span class="project-meta">Web Application · UI Design</span>
+                <h3 class="project-title">Apex Analytics Dashboard</h3>
+                <p class="project-desc">
+                  A high-density productivity dashboard engineered with CSS Grid and Flexbox.
+                  Features responsive data widgets, dark mode theming, and smooth metric transitions.
+                </p>
+
+                <div class="project-tech-tags">
+                  <span>HTML5</span>
+                  <span>CSS Grid</span>
+                  <span>Flexbox</span>
+                  <span>Responsive</span>
+                </div>
+
+                <div class="project-links">
+                  <a href="#hero" class="btn btn-primary">
+                    <span>Live Demo</span>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                      <polyline points="15 3 21 3 21 9"></polyline>
+                      <line x1="10" y1="14" x2="21" y2="3"></line>
+                    </svg>
+                  </a>
+                  <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                    <span>Code</span>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 2: Lumina Store -->
+            <article class="project-card">
+              <div class="project-visual">
+                <div class="project-preview-mockup">
+                  <div class="mockup-window">
+                    <div class="mockup-header">
+                      <div class="mockup-dot"></div>
+                      <div class="mockup-dot"></div>
+                      <div class="mockup-dot"></div>
+                    </div>
+                    <div class="mockup-content">
+                      <div class="mockup-skeleton-hero" style="background: linear-gradient(90deg, rgba(168, 85, 247, 0.2), rgba(56, 189, 248, 0.2));"></div>
+                      <div class="mockup-skeleton-grid" style="grid-template-columns: 1fr 1fr;">
+                        <div class="mockup-skeleton-box"></div>
+                        <div class="mockup-skeleton-box"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="project-body">
+                <span class="project-meta">E-Commerce · Storefront</span>
+                <h3 class="project-title">Lumina Digital Storefront</h3>
+                <p class="project-desc">
+                  Modern e-commerce product showcase crafted with responsive cards, subtle hover depth,
+                  and organized product specifications designed for high conversion.
+                </p>
+
+                <div class="project-tech-tags">
+                  <span>HTML5</span>
+                  <span>CSS Variables</span>
+                  <span>Animations</span>
+                  <span>UI/UX</span>
+                </div>
+
+                <div class="project-links">
+                  <a href="#hero" class="btn btn-primary">
+                    <span>Live Demo</span>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                      <polyline points="15 3 21 3 21 9"></polyline>
+                      <line x1="10" y1="14" x2="21" y2="3"></line>
+                    </svg>
+                  </a>
+                  <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                    <span>Code</span>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 3: PulsePress -->
+            <article class="project-card">
+              <div class="project-visual">
+                <div class="project-preview-mockup">
+                  <div class="mockup-window">
+                    <div class="mockup-header">
+                      <div class="mockup-dot"></div>
+                      <div class="mockup-dot"></div>
+                      <div class="mockup-dot"></div>
+                    </div>
+                    <div class="mockup-content">
+                      <div class="mockup-skeleton-hero" style="background: linear-gradient(90deg, rgba(16, 185, 129, 0.2), rgba(56, 189, 248, 0.2));"></div>
+                      <div class="mockup-skeleton-grid" style="grid-template-columns: 2fr 1fr;">
+                        <div class="mockup-skeleton-box"></div>
+                        <div class="mockup-skeleton-box"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="project-body">
+                <span class="project-meta">Publishing · Typography</span>
+                <h3 class="project-title">PulsePress Tech Journal</h3>
+                <p class="project-desc">
+                  An editorial-first tech publication layout emphasizing typographic hierarchy,
+                  smooth reading rhythm, multi-column articles, and accessible color contrast.
+                </p>
+
+                <div class="project-tech-tags">
+                  <span>Semantic HTML5</span>
+                  <span>Modern CSS</span>
+                  <span>CSS Columns</span>
+                  <span>Mobile-First</span>
+                </div>
+
+                <div class="project-links">
+                  <a href="#hero" class="btn btn-primary">
+                    <span>Live Demo</span>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                      <polyline points="15 3 21 3 21 9"></polyline>
+                      <line x1="10" y1="14" x2="21" y2="3"></line>
+                    </svg>
+                  </a>
+                  <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                    <span>Code</span>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================================================================
+           6. Contact Section
+           ================================================================== -->
+      <section id="contact" class="section contact">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-badge">Get In Touch</span>
+            <h2 class="section-title">Let's Build Something Great</h2>
+            <p class="section-subtitle">
+              Have a project inquiry, a question, or an exciting opportunity?
+              Send a note or connect on social channels.
+            </p>
+          </div>
+
+          <div class="contact-grid">
+            <!-- Contact Info & Socials -->
+            <div class="contact-info">
+              <p class="contact-bio-lead">
+                I'm currently welcoming new freelance engagements, full-time engineering roles,
+                and creative frontend projects. Reach out directly or fill out the form and
+                I'll respond within 24 hours.
+              </p>
+
+              <div class="contact-cards-list">
+                <!-- Direct Email Card -->
+                <div class="contact-card-item">
+                  <div class="contact-card-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                      <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                  </div>
+                  <div class="contact-card-text">
+                    <span class="contact-card-title">Email Directly</span>
+                    <a href="mailto:alex.morgan.dev@example.com" class="contact-card-link">
+                      alex.morgan.dev@example.com
+                    </a>
+                  </div>
+                </div>
+
+                <!-- Location Card -->
+                <div class="contact-card-item">
+                  <div class="contact-card-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                      <circle cx="12" cy="10" r="3"></circle>
+                    </svg>
+                  </div>
+                  <div class="contact-card-text">
+                    <span class="contact-card-title">Location</span>
+                    <span class="contact-card-link">San Francisco, CA (Remote Friendly)</span>
+                  </div>
+                </div>
+
+                <!-- Response Time Card -->
+                <div class="contact-card-item">
+                  <div class="contact-card-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <polyline points="12 6 12 12 16 14"></polyline>
+                    </svg>
+                  </div>
+                  <div class="contact-card-text">
+                    <span class="contact-card-title">Turnaround Time</span>
+                    <span class="contact-card-link">Replies typically under 24 hours</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Social Links -->
+              <div class="social-links-wrapper">
+                <span class="social-links-title">Connect Across the Web</span>
+                <div class="social-icons-row">
+                  <!-- GitHub -->
+                  <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="GitHub Profile">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                    </svg>
+                  </a>
+                  <!-- LinkedIn -->
+                  <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn Profile">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                      <rect x="2" y="9" width="4" height="12"></rect>
+                      <circle cx="4" cy="4" r="2"></circle>
+                    </svg>
+                  </a>
+                  <!-- Twitter / X -->
+                  <a href="https://x.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Twitter Profile">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path>
+                    </svg>
+                  </a>
+                  <!-- CodePen -->
+                  <a href="https://codepen.io" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="CodePen Profile">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2"></polygon>
+                      <line x1="12" y1="22" x2="12" y2="15.5"></line>
+                      <polyline points="22 8.5 12 15.5 2 8.5"></polyline>
+                      <polyline points="2 15.5 12 8.5 22 15.5"></polyline>
+                      <line x1="12" y1="2" x2="12" y2="8.5"></line>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="contact-form-container">
+              <h3 class="contact-form-title">Send a Direct Message</h3>
+              <p class="contact-form-desc">
+                Fill in your details and message below.
+              </p>
+
+              <form class="contact-form" action="mailto:alex.morgan.dev@example.com" method="post" enctype="text/plain">
+                <div class="form-group-row">
+                  <div class="form-group">
+                    <label for="contact-name" class="form-label">Your Name</label>
+                    <input
+                      type="text"
+                      id="contact-name"
+                      name="name"
+                      class="form-input"
+                      placeholder="Jane Doe"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="contact-email" class="form-label">Email Address</label>
+                    <input
+                      type="email"
+                      id="contact-email"
+                      name="email"
+                      class="form-input"
+                      placeholder="jane@example.com"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="contact-subject" class="form-label">Subject</label>
+                  <input
+                    type="text"
+                    id="contact-subject"
+                    name="subject"
+                    class="form-input"
+                    placeholder="Project Inquiry / Job Opportunity"
+                    required
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="contact-message" class="form-label">Message</label>
+                  <textarea
+                    id="contact-message"
+                    name="message"
+                    class="form-textarea"
+                    placeholder="Tell me about your project goals, timeline, and vision..."
+                    rows="5"
+                    required
+                  ></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary">
+                  <span>Send Message</span>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                  </svg>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ====================================================================
+         7. Footer Section
+         ==================================================================== -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <a href="#hero" class="nav-brand">
+              <span class="nav-brand-code">&lt;dev/&gt;</span>
+              <span>Alex Morgan</span>
+            </a>
+            <p class="footer-tagline">
+              Crafting accessible, high-performance web experiences with pure HTML &amp; CSS.
+            </p>
+          </div>
+
+          <ul class="footer-nav">
+            <li><a href="#hero" class="footer-nav-link">Home</a></li>
+            <li><a href="#about" class="footer-nav-link">About</a></li>
+            <li><a href="#skills" class="footer-nav-link">Skills</a></li>
+            <li><a href="#projects" class="footer-nav-link">Projects</a></li>
+            <li><a href="#contact" class="footer-nav-link">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2026 Alex Morgan. Built with semantic HTML5 &amp; CSS. Ready for GitHub Pages.</p>
+          <a href="#hero" class="back-to-top" aria-label="Back to top">
+            <span>Back to Top</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="12" y1="19" x2="12" y2="5"></line>
+              <polyline points="5 12 12 5 19 12"></polyline>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

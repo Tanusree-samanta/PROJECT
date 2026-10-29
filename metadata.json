@@ -1,0 +1,6 @@
+{
+  "name": "Modern Personal Portfolio",
+  "description": "A sleek, responsive personal portfolio website built using pure semantic HTML5 and CSS, ready for GitHub Pages hosting.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
